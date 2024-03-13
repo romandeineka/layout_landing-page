@@ -1,0 +1,26 @@
+
+.top-bar {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &--menu {
+    @include contentPaddingInline;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e5e5e5;
+  }
+
+  
+  @include onTablet {
+    padding-block: 36px;
+  }
+
+  &__logo {
+    display: flex;
+
+    @include hover(transform, scale(1.1));
+  }
+}
